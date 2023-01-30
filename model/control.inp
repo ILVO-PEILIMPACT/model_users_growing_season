@@ -1,0 +1,39 @@
+# Controlfile:  SWAP-WOFOST PEILIMPACT
+# Author:       Diana Estrella & Martin Mulder
+#________________________________________________
+#
+
+# DIRECTORIES
+#------------------------------------------------
+
+DIRRUN                              ./Temp
+
+
+# INPUT GENERATION
+#------------------------------------------------
+
+SOIL                              ./maps/soil_type.asc
+AVGGWL                            ./maps/GWL_avg.asc
+GHG                               ./maps/GHG.asc
+GLG                               ./maps/GLG.asc
+METEO                             ./maps/JRC_meteo.asc
+
+
+# MAINPROCESS
+#------------------------------------------------
+
+MAINPROCESS                         Yes
+
+RUNID                               ALL
+
+PRGSWP                              ./model/source/swap_4.2.0.exe    # swap executable
+FILSQL                              ./model/sqlite_database/input_data.sqlite     # sqlite database
+
+FILSWP                              ./model/swap.swp                           # filenaam swp-file
+DIRCRP                              ./model/crop                                  # folder crp-file(s)
+DIRMET                              ./model/meteo                                   # folder met-file(s)
+
+# POSTPROCESS
+#------------------------------------------------
+
+POSTPROCESS                         Yes

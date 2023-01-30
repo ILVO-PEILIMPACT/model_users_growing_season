@@ -1,0 +1,104 @@
+Package: apiwwl
+Version: 0.4.3
+Depends: R (>= 4.0.0)
+Imports: curl, purrr, dplyr, jsonlite, tidyselect
+License: GPL (>= 3)
+MD5sum: ffecebde94018a098e972a87ae874cb4
+NeedsCompilation: no
+
+Package: ascR
+Version: 0.1.4
+Depends: R (>= 4.0.0)
+Imports: fs (>= 1.5.0), stringr (>= 1.4.0), tibble (>= 3.1.6), raster
+        (>= 3.5-11), dplyr (>= 1.0.7)
+License: GPL (>= 3)
+MD5sum: 8724b58bc6f883829eeb559590d9040c
+NeedsCompilation: no
+
+Package: controlR
+Version: 1.0.18
+Depends: R (>= 4.0.0)
+Imports: lubridate (>= 1.8.0), stringr (>= 1.4.0), readr (>= 2.1.1),
+        curl (>= 4.3.2), ggplot2 (>= 3.3.5)
+License: GPL (>= 3)
+MD5sum: f41731a1dc3c41f3e6b52a34380b7d40
+NeedsCompilation: no
+
+Package: idfR
+Version: 0.1.7
+Depends: R (>= 4.0.0)
+Imports: fs (>= 1.5.0), stringr (>= 1.4.0), tibble (>= 3.1.6), dplyr
+        (>= 1.0.7)
+License: GPL (>= 3)
+MD5sum: 608d9a931f2691d90ce194a716b9974e
+NeedsCompilation: no
+
+Package: KNMItools
+Version: 0.1.19
+Depends: R (>= 4.0.0)
+Imports: grid (>= 4.0.0), stringr (>= 1.4.0), fs (>= 1.5.0), readr (>=
+        2.1.1), lubridate (>= 1.8.0), rlang (>= 1.0.6), dplyr (>=
+        1.0.7), tibble (>= 3.1.6), curl (>= 4.3.2), controlR (>=
+        1.0.16), ggplot2 (>= 3.3.5), pals (>= 1.7), progress (>=
+        1.2.2), jsonlite (>= 1.7.2)
+License: GPL (>= 3)
+MD5sum: fba6f3df8cdff148aa3a5c450f233829
+NeedsCompilation: no
+
+Package: SWAPtools
+Version: 0.1.71
+Depends: R (>= 4.0.0)
+Imports: stats (>= 4.0), stringr (>= 1.4.0), fs (>= 1.5.0), readr (>=
+        2.1.1), lubridate (>= 1.8.0), controlR (>= 1.0.16), RSQLite (>=
+        2.2.9), readxl (>= 1.3.1), ggplot2 (>= 3.3.5), ggpattern (>=
+        0.4.2), pals (>= 1.7), rlang (>= 1.0.1), progress (>= 1.2.2),
+        tibble (>= 3.1.6), dplyr (>= 1.0.7), Metrics (>= 0.1.4),
+        KNMItools (>= 0.1.17)
+License: GPL (>= 3)
+MD5sum: 25e623927efde15911dae412fc0a4893
+NeedsCompilation: no
+
+Package: WWLanalyse
+Version: 1.0.16
+Depends: R (>= 4.0.0)
+Imports: stats (>= 4.0), stringr (>= 1.4.0), fs (>= 1.5.0), tibble(>=
+        3.1.6), readr (>= 2.1.1), lubridate (>= 1.8.0), ggplot2 (>=
+        3.3.5), controlR (>= 1.0.16), SWAPtools (>= 0.1.56), dplyr (>=
+        1.0.7)
+License: GPL (>= 3)
+MD5sum: 3eb8ffec6c5832bf947fe3a9cbd6bb25
+NeedsCompilation: no
+
+Package: WWLmaatwerk
+Version: 2.0.6
+Depends: R (>= 4.0.0)
+Imports: utils (>= 4.0), fs (>= 1.5.0), readr (>= 2.1.1), stringr (>=
+        1.4.0), controlR (>= 1.0.16), tibble (>= 3.1.6), dplyr (>=
+        1.0.7), ggplot2 (>= 3.3.5), RSQLite (>= 2.2.9), SWAPtools (>=
+        0.1.56), apiwwl(>= 0.4.3), WWLanalyse (>= 1.0.13)
+License: GPL (>= 3)
+MD5sum: 119c9381df97b291e1ce3c3ca60657e0
+NeedsCompilation: no
+
+Package: WWLregionaal
+Version: 1.0.21
+Depends: R (>= 4.0.0)
+Imports: controlR (>= 1.0.16), RSQLite (>= 2.2.9), fs (>= 1.5.0),
+        lubridate (>= 1.8.0), readr (>= 2.1.1), stringr (>= 1.4.0),
+        progress (>= 1.2.2), idfR (>= 0.1.7), ascR (>= 0.1.4),
+        tibble(>= 3.1.6), dplyr(>= 1.0.7), KNMItools (>= 0.1.17),
+        SWAPtools (>= 0.1.56)
+License: GPL (>= 3)
+MD5sum: 42e9be6ee50a9ae31f5c3a18e816de0a
+NeedsCompilation: no
+
+Package: WWLtabel
+Version: 4.0.5
+Depends: R (>= 4.0.0)
+Imports: stringr (>= 1.4.0), controlR (>= 1.0.16), apiwwl (>= 0.4.3),
+        dplyr (>= 1.0.7), tibble (>= 3.1.6), readr (>= 2.1.1), fs (>=
+        1.5.0), sf (>= 0.9-8), ascR (>= 0.1.4), idfR (>= 0.1.7),
+        progress (>= 1.2.2)
+License: GPL (>= 3)
+MD5sum: 82785596da06f9453803fd07c136264b
+NeedsCompilation: no
